@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/kaaper/Documents/html_project/bsSource/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Grid Test</title>
 
 
     <style>
-        body{
+        body {
             margin: 0px;
             padding: 0px;
         }
+
         /* grid effects only the box positions*/
-        .container{
+        .container {
             height: 100%;
         }
-        table{
+
+        table {
             height: 100%;
             display: grid;
             grid-gap: 3px;
@@ -35,80 +39,108 @@
                 "f f f f f f";
             */
         }
-        p{
+
+        p {
             margin: 0px;
             padding: 0px;
             font-size: 25px;
             text-align: center;
         }
-        .header{
+
+        .header {
             background-color: red;
-            
+
             /*shortcut is below*/
             grid-column-start: 1;
             grid-column-end: -1;
-            
+
             /*grid-column: h;*/
         }
-        .menu{
+
+        .menu {
             grid-row: 2 / span 4;
             text-transform: uppercase;
             background-color: yellow;
         }
-        .content1{
+
+        .content1 {
             color: #ffffff;
             background-color: #0000ff;
         }
-        .content2{
+
+        .content2 {
             color: #ffffff;
             background-color: #000551;
         }
-        .content3{
+
+        .content3 {
             color: #ffffff;
             background-color: #000a9f;
         }
-        .content4{
+
+        .content4 {
             color: #ffffff;
             background-color: #105c9e;
         }
+
         /*.content1, .content2, .content3, .content4{
             grid-column: c;
         }*/
-        .footer{
+        .footer {
             /*
             another shortcut for stritching cell a cross the page. */
             grid-column: 1/ -1;
-            
+
             /*grid-column: f;*/
             background-color: yellowgreen;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <table>
             <thead style="display: contents;">
-               <tr style="display: contents;">
-                    <td class="header"><p>Header</p></td>
-                    <td class="menu"><p>Menu</p></td>
-                    <td class="content1"><p>Content</p> </td>
-                    <td class="content2"><p>Content</p> </td>
-                    <td class="content3"><p>Content</p> </td>
-                    <td class="content4"><p>Content</p> </td>
-                    <td class="footer"><p>Footer</p> </td>
+                <tr style="display: contents;">
+                    <td class="header">
+                        <p>Header</p>
+                    </td>
+                    <td class="menu">
+                        <p>Menu</p>
+                    </td>
+                    <td class="content1">
+                        <p>Content</p>
+                    </td>
+                    <td class="content2">
+                        <p>Content</p>
+                    </td>
+                    <td class="content3">
+                        <p>Content</p>
+                    </td>
+                    <td class="content4">
+                        <p>Content</p>
+                    </td>
+                    <td class="footer">
+                        <p>Footer</p>
+                    </td>
                 </tr>
-            </thead>
+            </thead>Now that we're using Bootstrap, we can center our heading element to make it look better.
         </table>
     </div>
     <div style="margin-left: 35%;margin-right: 35%; display: inline-flex;align-items: center;">
         <span>
-            <button type="button" onclick="1++" style="width: 25px ;background-color: red; border-radius: 50%; cursor: pointer;"><p style="font-size: 20px;"><b>+</b></p></button>
+            <button type="button" onclick="1++"
+                style="width: 25px ;background-color: red; border-radius: 50%; cursor: pointer;">
+                <p style="font-size: 20px;"><b>+</b></p>
+            </button>
         </span>
         <span>
-            <p style="margin: 5px;padding: 5px; font-size: small; text-align: center;width: 75px; height: 25px;border-color: orange; border-width: 5px; border-style: solid;">submite</p>
+            <p
+                style="margin: 5px;padding: 5px; font-size: small; text-align: center;width: 75px; height: 25px;border-color: orange; border-width: 5px; border-style: solid;">
+                submite</p>
         </span>
         <span>
-            <button type="button" style="width: 25px ;background-color: red; border-radius: 50%;">-</button>
+            <button class="btn btn-block btn-info">-</button>
         </span>
     </div>
     <script>
@@ -116,4 +148,5 @@
         // console.log(randomColor);
     </script>
 </body>
+
 </html>
