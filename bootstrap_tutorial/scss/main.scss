@@ -1,0 +1,13 @@
+$colors: (
+    primary: #FFBB00,
+    secondery: #00FF,
+);
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Montserrat;
+    background-color: map-get($colors, primary)
+}
