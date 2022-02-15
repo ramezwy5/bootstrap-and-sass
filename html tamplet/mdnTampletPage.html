@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="mdn-style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <h1>
+        <p>HTML layout elements in more detail</p>
+
+    </h1>
+    <p>It's good to understand the overall meaning of all the HTML sectioning elements in detail — </br>this is
+        something you'll work on gradually as you start to get more experience with web development. You can find a lot
+        of detail by reading our HTML element reference.</br> For now, these are the main definitions that you should
+        try to understand:</p>
+    <header>
+        <h2>Header</h2>
+        <p>header represents a group of introductory content.<br> If it is a child of body it defines the global header
+            of a webpage,<br> but if it's a child of an article or section it defines a specific header for that section
+            (try not to confuse this with titles and headings).</p>
+
+    </header>
+
+    <nav>
+        <h2>NAV</h2>
+        <p>contains the main navigation functionality for the page. Secondary links, etc., would not go in the
+            navigation.</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+        <form>
+            <input type="search" name="q" placeholder="Search query">
+            <input type="submit" value="Go!">
+        </form>
+    </nav>
+
+    <!-- Here is our page's main content -->
+
+    <main>
+        <h2>MAIN</h2>
+        <p>main is for content unique to this page. Use main only once per page, and put it directly inside body.
+            Ideally this shouldn't be nested within other elements.?<br>
+            Each of the aforementioned elements can be clicked on to read the corresponding article in the "HTML element
+            reference" section, providing more detail about each one.</p>
+        <!-- It contains an article -->
+        <article>
+
+            <h2>Article heading</h2>
+            <header>
+                <p>header represents a group of introductory content.<br> If it is a child of body it defines the global
+                    header
+                    of a webpage,<br> but if it's a child of an article or section it defines a specific header for that
+                    section
+                    (try not to confuse this with titles and headings).</p>
+            </header>
+            <p>article encloses a block of related content that makes sense on its own without the rest of the page
+                (e.g., a
+                single blog post).</p>
+            <section>
+                <h2>SECTION</h2>
+                <h3>section is similar to article,</h3>
+                <p>but it is more for grouping together a single part of the page that constitutes one single piece of
+                    functionality (e.g., a mini map, or a set of article headlines and summaries), or a theme. It's
+                    considered
+                    best practice to begin each section with a heading; <br> also note that you can break articles up
+                    into
+                    different sections, or sections up into different articles, depending on the context.</p>
+
+                <sub>
+                    <h3>Subsection</h3>
+                    <p>Non-semantic wrappers<br>
+                        Sometimes you'll come across a situation where you can't find an ideal semantic element to group
+                        some items
+                        together or wrap some content. Sometimes you might want to just group a set of elements together
+                        to affect them
+                        all as a single entity with some CSS or JavaScript. For cases like these,<b>HTML provides the
+                            div and span elements.</b> <br>You should use these preferably with a suitable class
+                        attribute, to provide some kind of
+                        label for them so they can be easily targeted.
+                        <br><b>span</b> is an inline non-semantic element, which you should only use if you can't think
+                        of a better semantic text element to wrap your content, or don't want to add any specific
+                        meaning.
+                    </p>
+                </sub>
+            </section>
+
+        </article>
+
+        <!-- the aside content can also be nested within the main content -->
+        <aside>
+            <h2>ASIDE</h2>
+            <p>aside contains content that is not directly related to the main content,<br> but can provide additional
+                information indirectly related to it (glossary entries, author biography, related links, etc.).</p>
+            <ul>
+                <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                <li><a href="#">Oh I do like to be beside the sea</a></li>
+                <li><a href="#">Although in the North of England</a></li>
+                <li><a href="#">It never stops raining</a></li>
+                <li><a href="#">Oh well...</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+        <p>footer represents a group of end content for a page.</p>
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>

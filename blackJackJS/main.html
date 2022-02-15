@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Black Jack</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <h1>Black Jack</h1>
+    </header>
+    <main>
+        <section id="players-container">
+            <aside id="player1">
+                <p>player one</p>
+                <p id="player1-name">Cards</p>
+                <p id="player1-points">Score</p>
+            </aside>
+            <aside id="player2">
+                <p>player two</p>
+                <p id="player2-name">Cards</p>
+                <p id="player2-points">Score</p>
+            </aside>
+        </section>
+        <section id="game-deck">
+            <div>
+                <h2 id="message-el">CLICK START TO PLAY</h2>
+                <p id="cards-el">Cards:</p>
+                <p id="sum-el">Sum:</p>
+            </div>
+            <div class="buttons">
+                <button id="start-el" onclick="start()">START GAME</button>
+                <button id="add-card" onclick="hit()">Hit New Card</button>
+                <button id="stop" onclick="draw()">Draw</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
